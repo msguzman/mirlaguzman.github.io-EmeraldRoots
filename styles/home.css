@@ -42,12 +42,17 @@ body {
     align-items: center;
     gap: 25px;
     font-size: 0.9rem;
+    transition: max-height 0.3s ease;
+    overflow: hidden;
+    max-height: 0;
+
 }
 
 .nav-links a {
     text-decoration: none;
     color: #1c391d;
     font-weight: 500;
+    max-height: 500px; /* suficiente para mostrar todos los enlaces */
 }
 
 /* ===== BUTTONS ===== */
@@ -374,6 +379,7 @@ body {
         display: flex;
     }
 }
+
 
 
 
