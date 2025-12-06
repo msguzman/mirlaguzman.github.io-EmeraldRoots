@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-    // ===== Scroll reveal para el texto sobre la imagen =====
+
     const bannerImage = document.getElementById("banner-trigger");
     const revealText = document.querySelector(".hidden-text.banner-text");
 
@@ -13,12 +13,12 @@ document.addEventListener("DOMContentLoaded", () => {
                 }
             });
         },
-        { threshold: 0.5 } // Aparece cuando llega a la mitad de la imagen
+        { threshold: 0.5 } 
     );
 
     textObserver.observe(bannerImage);
 
-    // ===== Contador de árboles plantados =====
+    
     const treeCounter = document.getElementById("tree-counter");
     let counted = false;
 
@@ -28,8 +28,8 @@ document.addEventListener("DOMContentLoaded", () => {
                 if (entry.isIntersecting && !counted) {
                     counted = true;
                     let count = 0;
-                    const target = 10000; // Cambia esto al número real de árboles plantados
-                    const duration = 2000; // Duración en ms
+                    const target = 10000; 
+                    const duration = 2000; 
                     const increment = Math.ceil(target / (duration / 20));
 
                     const counterInterval = setInterval(() => {
@@ -43,8 +43,16 @@ document.addEventListener("DOMContentLoaded", () => {
                 }
             });
         },
-        { threshold: 0.5 } // Empieza cuando el contador sea visible a la mitad
+        { threshold: 0.5 } 
     );
 
     counterObserver.observe(treeCounter);
 });
+
+const menuToggle = document.querySelector('.menu-toggle');
+const navLinks = document.querySelector('.nav-links');
+
+menuToggle.addEventListener('click', () => {
+  navLinks.classList.toggle('active');
+});
+
