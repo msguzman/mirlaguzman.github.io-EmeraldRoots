@@ -19,6 +19,8 @@ body {
 .navbar {
     background: #b1e7c3;
     padding: 18px 0;
+     position: relative; 
+    z-index: 100;      
 }
 
 .navbar .container {
@@ -379,4 +381,5 @@ body {
         display: flex;
     }
 }
+
 
