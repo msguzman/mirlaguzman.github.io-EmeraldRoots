@@ -357,29 +357,24 @@ body {
 
 /* Móvil */
 @media (max-width: 900px) {
-    /* Mostrar botón */
-    .menu-toggle {
-        display: block;
-    }
-
-    /* Ocultar menú horizontal por defecto */
     .nav-links {
         display: none;
         flex-direction: column;
         gap: 15px;
         background: #b1e7c3;
         padding: 15px 0;
-        position: absolute;
-        top: 100%; /* justo debajo de la navbar */
+        position: absolute;  /* relativo al navbar */
+        top: 100%;           /* justo debajo de la barra */
         left: 0;
         width: 100%;
-        z-index: 10;
+        z-index: 99;
     }
 
-    /* Mostrar menú cuando se activa */
     .nav-links.active {
         display: flex;
     }
 }
+
+
 
 
