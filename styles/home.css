@@ -10,11 +10,12 @@ body {
     background: #ffffff;
     color: #1f3d22;
 }
+
 .btn {
-  text-decoration: none !important;
+    text-decoration: none !important;
 }
 
-/* ===== NAVBAR HOME  ===== */
+/* ===== NAVBAR HOME ===== */
 #home-navbar {
     background: #b1e7c3;
     padding: 18px 0;
@@ -42,7 +43,7 @@ body {
 
 #home-navbar .nav-links {
     display: flex;
-    gap: 1rem; /* igual que gap-4 de Activities */
+    gap: 1rem; 
     align-items: center;
 }
 
@@ -54,41 +55,6 @@ body {
 
 #home-navbar .nav-links a:hover {
     text-decoration: underline;
-}
-
-
-
-/* ===== NAVBAR ===== */
-.navbar {
-    background: #b1e7c3;
-    padding: 18px 0;
-}
-
-.navbar .container {
-    width: 90%;
-    margin: auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.logo .icon {
-    font-size: 1.4rem;
-    margin-right: 5px;
-}
-
-/* ===== NAV LINKS ===== */
-.nav-links {
-    display: flex;
-    align-items: center;
-    gap: 25px;
-    font-size: 0.9rem;
-}
-
-.nav-links a {
-    text-decoration: none;
-    color: #1c391d;
-    font-weight: 500;
 }
 
 /* ===== BUTTONS ===== */
@@ -354,5 +320,10 @@ body {
     .info-section p {
         width: 90%;
     }
-}
 
+    #home-navbar .nav-links {
+        justify-content: center;
+        gap: 1.5rem;
+        margin-top: 10px;
+    }
+}
