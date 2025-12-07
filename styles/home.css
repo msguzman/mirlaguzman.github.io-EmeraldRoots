@@ -14,64 +14,34 @@ body {
   text-decoration: none !important;
 }
 
-
 /* ===== NAVBAR ===== */
-.navbar {
+.custom-navbar {
     background: #b1e7c3;
-    padding: 18px 0;
 }
 
-.navbar .container {
-    width: 90%;
-    margin: auto;
+.custom-navbar a {
+    color: #1b3a1c;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.custom-navbar a:hover {
+    text-decoration: underline;
+}
+
+.nav-links {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    gap: 25px;
 }
 
 .logo {
-    margin: 0; /* igual que activities */
     display: flex;
     align-items: center;
 }
 
 .logo img {
-    margin-right: 0.5rem; /* me-2 equivalente */
-}
-
-/* ===== NAV LINKS ===== */
-.nav-links {
-    display: flex;
-    align-items: center;
-    gap: 25px;
-    font-size: 0.9rem;
-}
-
-.nav-links a {
-    text-decoration: none;
-    color: #1c391d;
-    font-weight: 500;
-}
-
-/* ===== BUTTONS ===== */
-.btn {
-    padding: 10px 20px;
-    border-radius: 30px;
-    border: none;
-    cursor: pointer;
-    font-size: 0.9rem;
-    font-weight: 600;
-}
-
-.btn-dark {
-    background: #1c3e1a;
-    color: #ffffff;
-}
-
-.btn-green {
-    background: #1f6d27;
-    color: white;
-    margin-top: 25px;
+    margin-right: 0.5rem; 
 }
 
 /* ===== MAIN SECTION ===== */
@@ -162,7 +132,8 @@ body {
     flex: 1;
 }
 
-.onboarding-text h1 {
+.onboarding-text h1,
+.onboarding-text h2 {
     font-size: 2.8rem;
     margin: 0 0 15px 0;
     font-weight: 600;
@@ -272,50 +243,4 @@ body {
     border-radius: 10px;
 }
 
-.counter-section #tree-counter {
-    font-size: 3rem;
-    font-weight: 700;
-    color: #1f6d27;
-    margin-top: 15px;
-}
-
-/* ===== FOOTER ===== */
-.footer {
-    background-color: #1b3a1c;
-    color: white;
-    padding: 20px 0;
-    text-align: center;
-    font-size: 0.9rem;
-}
-
-.footer-nav a {
-    color: #a5d6a7;
-    text-decoration: none;
-    margin: 0 8px;
-}
-
-.footer-nav a:hover {
-    text-decoration: underline;
-}
-
-/* ===== RESPONSIVE ===== */
-@media (max-width: 900px) {
-    .main-content, .onboarding-container {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    .text-content h1 {
-        font-size: 3rem;
-    }
-
-    .main-image {
-        margin-top: 20px;
-    }
-
-    .info-section p {
-        width: 90%;
-    }
-}
-
-
+.counter-section
