@@ -15,9 +15,9 @@ body {
     text-decoration: none !important;
 }
 
-/* ===== HEADER  ===== */
+/* ===== HEADER HOME ===== */
 #home-page .custom-navbar {
-    background: #b1e7c3!important;
+    background-color: #b1e7c3 !important; 
 }
 
 #home-page .custom-navbar a {
@@ -201,7 +201,7 @@ body {
     margin: auto;
 }
 
-/* ===== IMPACT SECTION ===== */
+/* ===== IMPACT SECTION  AND CARDS ===== */
 .impact-section, .benefits-section, .help-section, .before-after-section, .counter-section {
     padding: 60px 0;
     text-align: center;
@@ -220,6 +220,19 @@ body {
     padding: 20px;
     border-radius: 10px;
     width: 220px;
+}
+
+
+.card h3 {
+    font-size: 1.1rem; 
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #174c1a;
+}
+
+.card p {
+    font-size: 0.9rem;
+    color: #3a3a3a;
 }
 
 .before-after-images .image-pair img {
@@ -272,4 +285,3 @@ body {
         width: 90%;
     }
 }
-
