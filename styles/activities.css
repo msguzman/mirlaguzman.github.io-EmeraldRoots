@@ -93,16 +93,18 @@ body {
     text-align: center;
 }
 
-.reg-cta .btn-cta {
+.btn-cta {
     background: #14532d;
     color: white;
     padding: 12px 25px;
     border-radius: 8px;
+    border: none;
     text-decoration: none;
     transition: 0.3s;
+    cursor: pointer;
 }
 
-.reg-cta .btn-cta:hover {
+.btn-cta:hover {
     background: #1e7a45;
 }
 
@@ -148,12 +150,10 @@ body {
 }
 
 /* ====== CARRUSEL CORREGIDO ====== */
-
 #regCarousel .carousel-item {
-    height: 420px !important; /* altura estándar */
+    height: 420px !important;
 }
 
-/* Imágenes controladas sin clases de Bootstrap */
 .carousel-img {
     height: 100% !important;
     width: 100% !important;
