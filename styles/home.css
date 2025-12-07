@@ -34,7 +34,7 @@ body {
     align-items: center;
     margin: 0;
     font-weight: 600;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 
 #home-navbar .logo img {
@@ -327,3 +327,4 @@ body {
         margin-top: 10px;
     }
 }
+
