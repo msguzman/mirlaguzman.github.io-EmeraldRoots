@@ -3,6 +3,7 @@
 document.addEventListener('DOMContentLoaded', function() {
 
     const donationForm = document.getElementById('donationForm');
+    const thankMessage = document.getElementById('thankMessage');
 
     if (donationForm) {
         donationForm.addEventListener('submit', function(e) {
@@ -25,8 +26,8 @@ document.addEventListener('DOMContentLoaded', function() {
             // Limpia el formulario
             donationForm.reset();
 
-            // Mensaje simple de agradecimiento
-            alert("Thank you for your donation!");
+            // Muestra el mensaje en la página
+            thankMessage.style.display = "block";
         });
     }
 
