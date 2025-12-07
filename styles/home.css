@@ -1,3 +1,18 @@
+/* ===== HEADER SOLO PARA HOME ===== */
+#home-page .custom-navbar {
+    background-color: #b1e7c3 !important; 
+}
+
+#home-page .custom-navbar a {
+    color: #1c391d;
+    font-weight: 700; 
+    text-decoration: none;
+}
+
+#home-page .custom-navbar a:hover {
+    text-decoration: underline;
+}
+
 /* ===== GLOBAL ===== */
 * {
     margin: 0;
@@ -15,19 +30,52 @@ body {
     text-decoration: none !important;
 }
 
-/* ===== HEADER SOLO PARA HOME ===== */
-#home-page .custom-navbar {
-    background-color: #b1e7c3 !important; 
+/* ===== NAVBAR ===== */
+.navbar {
+    padding: 18px 0;
 }
 
-#home-page .custom-navbar a {
-    color: #1c391d;
-    font-weight: 700;
+.navbar .container {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* ===== NAV LINKS ===== */
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    font-size: 0.9rem;
+}
+
+.nav-links a {
     text-decoration: none;
+    color: #1c391d;
+    font-weight: 500;
 }
 
-#home-page .custom-navbar a:hover {
-    text-decoration: underline;
+/* ===== BUTTONS ===== */
+.btn {
+    padding: 10px 20px;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.btn-dark {
+    background: #1c3e1a;
+    color: #ffffff;
+}
+
+.btn-green {
+    background: #1f6d27;
+    color: white;
+    margin-top: 25px;
 }
 
 /* ===== MAIN SECTION ===== */
@@ -83,13 +131,14 @@ body {
     object-fit: cover;
 }
 
+/* ===== HIDDEN TEXT OVER BANNER ===== */
 .hidden-text.banner-text {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) translateY(40px);
     text-align: center;
-    background: none;
+    background: none; 
     color: white;
     padding: 0;
     border-radius: 0;
@@ -117,12 +166,10 @@ body {
     flex: 1;
 }
 
-
-.onboarding-text h2 {
-    font-size: 3.5rem; 
-    font-weight: 800;
-    margin-bottom: 15px;
-    color: #174c1a;
+.onboarding-text h1 {
+    font-size: 2.8rem;
+    margin: 0 0 15px 0;
+    font-weight: 600;
 }
 
 .onboarding-text p.subtitle {
@@ -150,7 +197,7 @@ body {
     max-width: 400px;
 }
 
-.step-content h3 {
+.step-content h2 {
     margin: 0 0 10px 0;
     font-size: 1.3rem;
     font-weight: 600;
@@ -203,7 +250,7 @@ body {
     margin: auto;
 }
 
-/* ===== IMPACT SECTION & CARDS ===== */
+/* ===== IMPACT SECTION ===== */
 .impact-section, .benefits-section, .help-section, .before-after-section, .counter-section {
     padding: 60px 0;
     text-align: center;
@@ -222,19 +269,6 @@ body {
     padding: 20px;
     border-radius: 10px;
     width: 220px;
-}
-
-
-.card h3 {
-    font-size: 1.1rem; /* tamaño original */
-    font-weight: 600;
-    margin-bottom: 8px;
-    color: #174c1a;
-}
-
-.card p {
-    font-size: 0.9rem;
-    color: #3a3a3a;
 }
 
 .before-after-images .image-pair img {
