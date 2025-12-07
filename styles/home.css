@@ -19,8 +19,6 @@ body {
 .navbar {
     background: #b1e7c3;
     padding: 18px 0;
-     position: relative; 
-    z-index: 100;      
 }
 
 .navbar .container {
@@ -42,17 +40,12 @@ body {
     align-items: center;
     gap: 25px;
     font-size: 0.9rem;
-    transition: max-height 0.3s ease;
-    overflow: hidden;
-    max-height: 0;
-
 }
 
 .nav-links a {
     text-decoration: none;
     color: #1c391d;
     font-weight: 500;
-    max-height: 500px; /* suficiente para mostrar todos los enlaces */
 }
 
 /* ===== BUTTONS ===== */
@@ -301,86 +294,21 @@ body {
 }
 
 /* ===== RESPONSIVE ===== */
-
 @media (max-width: 900px) {
-    .main-content,
-    .onboarding-container,
-    .impact-cards,
-    .benefit-cards,
-    .before-after-images {
+    .main-content, .onboarding-container {
         flex-direction: column;
-        align-items: center;
         text-align: center;
-    }
-    
-    .main-image img,
-    .onboarding-image img,
-    .before-after-images .image-pair img {
-        max-width: 100%;
-        height: auto;
     }
 
     .text-content h1 {
-        font-size: 2.2rem;
-        line-height: 1.2;
+        font-size: 3rem;
     }
 
-    .onboarding-text h2, 
-    .info-section h2, 
-    .impact-section h2, 
-    .benefits-section h2 {
-        font-size: 1.8rem;
+    .main-image {
+        margin-top: 20px;
     }
 
-    .info-section p, 
-    .step-content p {
-        font-size: 0.95rem;
-        width: 95%;
-        margin: auto;
-    }
-
-    .card, .benefit-card, .image-pair {
+    .info-section p {
         width: 90%;
-        margin-bottom: 20px;
-    }
-
-    .nav-links {
-        flex-direction: column;
-        gap: 15px;
     }
 }
-
-
-/* Botón hamburguesa oculto en desktop */
-.menu-toggle {
-    display: none;
-    font-size: 2rem;
-    background: none;
-    border: none;
-    cursor: pointer;
-}
-
-/* Móvil */
-@media (max-width: 900px) {
-    .nav-links {
-        display: none;
-        flex-direction: column;
-        gap: 15px;
-        background: #b1e7c3;
-        padding: 15px 0;
-        position: absolute;  /* relativo al navbar */
-        top: 100%;           /* justo debajo de la barra */
-        left: 0;
-        width: 100%;
-        z-index: 99;
-    }
-
-    .nav-links.active {
-        display: flex;
-    }
-}
-
-
-
-
-
