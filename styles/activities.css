@@ -115,27 +115,57 @@ body {
         font-size: 1rem;
     }
 }
-
-
-
-/* ====== CARRUSEL STANDARD SIZE ====== */
-
-/* Tamaño general del carrusel */
-#regCarousel .carousel-item {
-    height: 420px; /* altura estándar — puedes ajustar */
+/* ====== NAVBAR COLOR PERSONALIZADO ====== */
+.custom-navbar {
+    background: #b1e7c3;
 }
 
-/* Imágenes dentro del carrusel */
-#regCarousel img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;   /* Recorta la imagen sin deformarla */
+.custom-navbar a {
+    color: #1b3a1c;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.custom-navbar a:hover {
+    text-decoration: underline;
+}
+
+/* ====== FOOTER COLOR PERSONALIZADO ====== */
+.footer {
+    background-color: #1b3a1c;
+    color: white;
+}
+
+.footer-nav a {
+    color: #a5d6a7;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.footer-nav a:hover {
+    color: #c8e6c9;
+}
+
+
+/* ====== CARRUSEL STANDARD SIZE (AISLADO) ====== */
+
+#regCarousel .carousel-item {
+    height: 420px !important; /* altura estándar */
+}
+
+/* SOLO aplica a imágenes dentro del carrusel */
+#regCarousel .carousel-item img {
+    height: 100% !important;
+    width: 100% !important;
+    object-fit: cover !important;
     border-radius: 12px;
 }
 
-/* ====== RESPONSIVE PARA MOVIL ====== */
+/* ====== RESPONSIVE PARA MOVIL - SOLO CARRUSEL ====== */
 @media (max-width: 768px) {
     #regCarousel .carousel-item {
-        height: 250px;  /* altura más pequeña en móvil */
+        height: 250px !important;
     }
 }
+
+
