@@ -1,25 +1,34 @@
 document.addEventListener('DOMContentLoaded', function() {
+    const showFormBtn = document.getElementById('showDonationForm');
+    const donationSection = document.getElementById('donationFormSection');
     const donationForm = document.getElementById('donationForm');
     const thankMessage = document.getElementById('thankMessage');
 
-    if (donationForm) {
-        donationForm.addEventListener('submit', function(e) {
-            e.preventDefault();
+    // Mostrar formulario al hacer click en "Get Involved"
+    showFormBtn.addEventListener('click', function() {
+        donationSection.style.display = 'block';
+        donationSection.scrollIntoView({ behavior: 'smooth' });
+    });
 
-            const name = document.getElementById('donorName').value.trim();
-            const email = document.getElementById('donorEmail').value.trim();
-            const amount = document.getElementById('donationAmount').value.trim();
+    // Manejar envío del formulario
+    donationForm.addEventListener('submit', function(e) {
+        e.preventDefault(); // Evita que la página se recargue
 
-            if (!name || !email || !amount || amount <= 0) {
-                alert("Please fill in all fields correctly.");
-                return;
-            }
+        // Validar campos (opcional)
+        const name = document.getElementById('donorName').value.trim();
+        const email = document.getElementById('donorEmail').value.trim();
+        const amount = document.getElementById('donationAmount').value.trim();
 
-            // Limpia el formulario
-            donationForm.reset();
+        if (!name || !email || !amount || amount <= 0) {
+            alert("Please fill in all fields correctly.");
+            return;
+        }
 
-            // Muestra mensaje de agradecimiento
-            thankMessage.style.display = "block";
-        });
-    }
+        // Limpiar formulario
+        donationForm.reset();
+
+        // Mostrar mensaje de agradecimiento
+        thankMessage.style.display = 'block';
+        thankMessage.scrollIntoView({ behavior: 'smooth' });
+    });
 });
