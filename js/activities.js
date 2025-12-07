@@ -3,21 +3,22 @@ document.addEventListener('DOMContentLoaded', function() {
     const thankMessage = document.getElementById('thankMessage');
 
     donateBtn.addEventListener('click', function() {
-        // Opcional: validar campos si quieres
         const name = document.getElementById('donorName').value.trim();
         const email = document.getElementById('donorEmail').value.trim();
         const amount = document.getElementById('donationAmount').value.trim();
 
         if (!name || !email || !amount || amount <= 0) {
-            alert("Please fill in all fields correctly.");
+            alert("Please fill all fields correctly.");
             return;
         }
 
-        // Limpiar formulario
-        document.getElementById('donationForm').reset();
+        // Limpiar campos
+        document.getElementById('donorName').value = '';
+        document.getElementById('donorEmail').value = '';
+        document.getElementById('donationAmount').value = '';
 
         // Mostrar mensaje de agradecimiento
-        thankMessage.style.display = "block";
+        thankMessage.style.display = 'block';
         thankMessage.scrollIntoView({ behavior: 'smooth' });
     });
 });
