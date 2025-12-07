@@ -15,9 +15,9 @@ body {
     text-decoration: none !important;
 }
 
-/* ===== NAVBAR HOME ===== */
+/* ===== NAVBAR HOME CORREGIDO ===== */
 #home-navbar {
-    background: #b1e7c3;
+    background-color: #B1E7C3; 
     padding: 18px 0;
 }
 
@@ -34,24 +34,22 @@ body {
     align-items: center;
     margin: 0;
     font-weight: 600;
-    font-size: 1rem;   
-    line-height: 1;       
+    font-size: 1rem; 
+    color: #1B3A1C; /
 }
 
 #home-navbar .logo img {
-    width: 50px;           
-    height: auto;         
-    margin-right: 0.5rem;  
+    margin-right: 0.5rem;
 }
 
 #home-navbar .nav-links {
     display: flex;
-    gap: 1rem;             
+    gap: 1rem;
     align-items: center;
 }
 
 #home-navbar .nav-links a {
-    color: #1b3a1c;
+    color: #1B3A1C; 
     font-weight: 600;
     text-decoration: none;
 }
@@ -59,6 +57,8 @@ body {
 #home-navbar .nav-links a:hover {
     text-decoration: underline;
 }
+
+
 
 /* ===== BUTTONS ===== */
 .btn {
@@ -330,3 +330,4 @@ body {
         margin-top: 10px;
     }
 }
+
