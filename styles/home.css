@@ -33,21 +33,20 @@ body {
     display: flex;
     align-items: center;
     margin: 0;
+    font-weight: 600;
+    font-size: 1rem;   
+    line-height: 1;       
 }
 
 #home-navbar .logo img {
-    margin-right: 0.5rem; 
-}
-
-#home-navbar .logo span {
-    font-size: 1rem !important;   
-    line-height: 1;
-    font-weight: 600;
+    width: 50px;           
+    height: auto;         
+    margin-right: 0.5rem;  
 }
 
 #home-navbar .nav-links {
     display: flex;
-    gap: 1rem; 
+    gap: 1rem;             
     align-items: center;
 }
 
