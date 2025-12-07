@@ -14,42 +14,48 @@ body {
   text-decoration: none !important;
 }
 
-/* ===== NAVBAR - HOME ===== */
+/* ===== NAVBAR HOME  ===== */
 #home-navbar {
     background: #b1e7c3;
+    padding: 18px 0;
 }
 
 #home-navbar .container {
+    width: 90%;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
 #home-navbar .logo {
-    margin: 0;
     display: flex;
     align-items: center;
+    margin: 0;
+    font-weight: 600;
+    font-size: 1.2rem;
 }
 
 #home-navbar .logo img {
-    margin-right: 0.5rem; /* equivalente a me-2 */
+    margin-right: 0.5rem;
 }
 
 #home-navbar .nav-links {
     display: flex;
-    gap: 1rem;
-    font-weight: 600;
-    color: #1b3a1c;
+    gap: 1rem; /* igual que gap-4 de Activities */
+    align-items: center;
 }
 
 #home-navbar .nav-links a {
-    text-decoration: none;
     color: #1b3a1c;
+    font-weight: 600;
+    text-decoration: none;
 }
 
 #home-navbar .nav-links a:hover {
     text-decoration: underline;
 }
+
 
 
 /* ===== NAVBAR ===== */
@@ -349,3 +355,4 @@ body {
         width: 90%;
     }
 }
+
