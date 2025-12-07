@@ -1,22 +1,33 @@
-// * This script handles the Netflix-style scrolling and auto-slide *
+// donation.js
 
-$(document).ready(function () {
+// Espera a que todo el DOM esté cargado
+document.addEventListener('DOMContentLoaded', function() {
 
-    // * Grab the carousel track (the scrollable row of images) *
-    const track = $(".carousel-track");
+    const donationForm = document.getElementById('donationForm');
 
-    // * Move right when user clicks the next button *
-    $(".next").click(function () {
-        track.animate({ scrollLeft: track.scrollLeft() + 350 }, 400);
-    });
+    if (donationForm) {
+        donationForm.addEventListener('submit', function(e) {
+            e.preventDefault(); // Evita que se recargue la página
 
-    // * Move left when user clicks the prev button *
-    $(".prev").click(function () {
-        track.animate({ scrollLeft: track.scrollLeft() - 350 }, 400);
-    });
+            const name = document.getElementById('donorName').value.trim();
+            const email = document.getElementById('donorEmail').value.trim();
+            const amount = document.getElementById('donationAmount').value.trim();
 
-    // * Automatic movement — yeah, like Netflix auto scroll *
-    setInterval(() => {
-        track.animate({ scrollLeft: track.scrollLeft() + 350 }, 600);
-    }, 3500); // * Every 3.5 seconds *
+            if (!name || !email || !amount || amount <= 0) {
+                alert("Por favor completa todos los campos correctamente.");
+                return;
+            }
+
+            alert(`¡Gracias ${name} por tu donación de $${amount}!`);
+
+            // Cierra el modal
+            const modalEl = document.getElementById('donationModal');
+            const modalInstance = bootstrap.Modal.getInstance(modalEl);
+            modalInstance.hide();
+
+            // Limpia el formulario
+            donationForm.reset();
+        });
+    }
+
 });
