@@ -15,11 +15,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 return;
             }
 
-            // Cierra el modal
-            const modalEl = document.getElementById('donationModal');
-            const modalInstance = bootstrap.Modal.getInstance(modalEl);
-            modalInstance.hide();
-
             // Limpia el formulario
             donationForm.reset();
 
