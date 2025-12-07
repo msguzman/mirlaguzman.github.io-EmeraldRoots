@@ -115,6 +115,7 @@ body {
         font-size: 1rem;
     }
 }
+
 /* ====== NAVBAR COLOR PERSONALIZADO ====== */
 .custom-navbar {
     background: #b1e7c3;
@@ -146,20 +147,19 @@ body {
     color: #c8e6c9;
 }
 
-
-
-/* ====== CARRUSEL STANDARD SIZE (AISLADO) ====== */
+/* ====== CARRUSEL CORREGIDO ====== */
 
 #regCarousel .carousel-item {
     height: 420px !important; /* altura estándar */
 }
 
-/* SOLO aplica a imágenes dentro del carrusel */
-#regCarousel .carousel-item img {
+/* Imágenes controladas sin clases de Bootstrap */
+.carousel-img {
     height: 100% !important;
     width: 100% !important;
     object-fit: cover !important;
     border-radius: 12px;
+    display: block !important;
 }
 
 /* ====== RESPONSIVE PARA MOVIL - SOLO CARRUSEL ====== */
@@ -168,8 +168,3 @@ body {
         height: 250px !important;
     }
 }
-
-
-
-
-
