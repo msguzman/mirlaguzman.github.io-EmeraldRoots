@@ -15,70 +15,19 @@ body {
     text-decoration: none !important;
 }
 
-/* ===== NAVBAR HOME CORREGIDO ===== */
-#home-navbar {
-    background-color: #B1E7C3; 
-    padding: 18px 0;
+/* ===== HEADER  ===== */
+#home-page .custom-navbar {
+    background: #b1e7c3;
 }
 
-#home-navbar .container {
-    width: 90%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-#home-navbar .logo {
-    display: flex;
-    align-items: center;
-    margin: 0;
-    font-weight: 600;
-    font-size: 1rem; 
-    color: #1B3A1C; /
-}
-
-#home-navbar .logo img {
-    margin-right: 0.5rem;
-}
-
-#home-navbar .nav-links {
-    display: flex;
-    gap: 1rem;
-    align-items: center;
-}
-
-#home-navbar .nav-links a {
-    color: #1B3A1C; 
-    font-weight: 600;
+#home-page .custom-navbar a {
+    color: #1c391d;
+    font-weight: 500;
     text-decoration: none;
 }
 
-#home-navbar .nav-links a:hover {
+#home-page .custom-navbar a:hover {
     text-decoration: underline;
-}
-
-
-
-/* ===== BUTTONS ===== */
-.btn {
-    padding: 10px 20px;
-    border-radius: 30px;
-    border: none;
-    cursor: pointer;
-    font-size: 0.9rem;
-    font-weight: 600;
-}
-
-.btn-dark {
-    background: #1c3e1a;
-    color: #ffffff;
-}
-
-.btn-green {
-    background: #1f6d27;
-    color: white;
-    margin-top: 25px;
 }
 
 /* ===== MAIN SECTION ===== */
@@ -134,14 +83,13 @@ body {
     object-fit: cover;
 }
 
-/* ===== HIDDEN TEXT OVER BANNER ===== */
 .hidden-text.banner-text {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) translateY(40px);
     text-align: center;
-    background: none; 
+    background: none;
     color: white;
     padding: 0;
     border-radius: 0;
@@ -169,7 +117,7 @@ body {
     flex: 1;
 }
 
-.onboarding-text h1 {
+.onboarding-text h1, .onboarding-text h2 {
     font-size: 2.8rem;
     margin: 0 0 15px 0;
     font-weight: 600;
@@ -200,7 +148,7 @@ body {
     max-width: 400px;
 }
 
-.step-content h2 {
+.step-content h3 {
     margin: 0 0 10px 0;
     font-size: 1.3rem;
     font-weight: 600;
@@ -323,11 +271,4 @@ body {
     .info-section p {
         width: 90%;
     }
-
-    #home-navbar .nav-links {
-        justify-content: center;
-        gap: 1.5rem;
-        margin-top: 10px;
-    }
 }
-
