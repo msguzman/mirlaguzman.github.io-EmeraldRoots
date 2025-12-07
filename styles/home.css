@@ -29,12 +29,6 @@ body {
     align-items: center;
 }
 
-.logo .icon {
-    font-size: 1.4rem;
-    margin-right: 5px;
-}
-
-
 .logo {
     margin: 0; /* igual que activities */
     display: flex;
@@ -323,4 +317,5 @@ body {
         width: 90%;
     }
 }
+
 
