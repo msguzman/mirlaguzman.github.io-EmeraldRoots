@@ -132,12 +132,36 @@
 <!-- CTA -->
 <section class="reg-cta">
     <h2>Join the Regeneration Movement</h2>
+    <div class="reg-desc container">
+        <a href="#donationFormSection" class="btn-cta">Donate Now</a>
+    </div>
 </section>
 
-<!-- Thank you message -->
-<div id="thankMessage" style="display:none; text-align:center; margin-top:20px; font-size:1.3rem; color: #14532d; font-weight:600;">
-    Thank you for your donation!
-</div>
+<!-- FORMULARIO DE DONACIÓN INTEGRADO -->
+<section id="donationFormSection" class="container my-5">
+    <h3 class="text-center mb-4">Make a Donation</h3>
+    <form id="donationForm" class="mx-auto" style="max-width:400px;">
+        <div class="mb-3">
+            <label for="donorName" class="form-label">Name</label>
+            <input type="text" class="form-control" id="donorName" required>
+        </div>
+        <div class="mb-3">
+            <label for="donorEmail" class="form-label">Email</label>
+            <input type="email" class="form-control" id="donorEmail" required>
+        </div>
+        <div class="mb-3">
+            <label for="donationAmount" class="form-label">Amount ($)</label>
+            <input type="number" class="form-control" id="donationAmount" required min="1">
+        </div>
+        <button type="submit" class="btn btn-success w-100">Donate</button>
+    </form>
+
+    <!-- MENSAJE DE AGRADECIMIENTO -->
+    <div id="thankMessage" class="text-center mt-3" style="display:none; font-size:1.2rem; color:#14532d; font-weight:600;">
+        Thank you for your donation!
+    </div>
+</section>
+
 
 <!-- Footer -->
 <footer class="footer py-4">
@@ -188,3 +212,4 @@
 
 </body>
 </html>
+
