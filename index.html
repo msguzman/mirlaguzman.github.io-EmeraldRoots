@@ -4,39 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Emerald Roots</title>
-    <!-- Bootstrap CSS -->
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Home CSS -->
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- CSS -->
     <link rel="stylesheet" href="./styles/home.css">
 </head>
-<body>
+<body id="home-page">
 
-<!-- Navbar -->
-<header id="home-navbar" class="navbar navbar-expand-lg bg-success py-3">
-  <div class="container d-flex justify-content-between align-items-center">
-    <h1 class="logo m-0 d-flex align-items-center">
-      <img src="./img/erLog.png" alt="" width="50" class="me-2">
-      <span>Emerald Roots</span>
-    </h1>
+<!-- Header  -->
+<header class="navbar custom-navbar py-3">
+    <div class="container d-flex justify-content-between align-items-center">
+        <h2 class="logo m-0 d-flex align-items-center">
+            <img src="./img/erLog.png" alt="" width="50" class="me-2">Emerald Roots
+        </h2>
 
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#homeNavLinks" aria-controls="homeNavLinks" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-
-    <div class="collapse navbar-collapse" id="homeNavLinks">
-      <nav class="nav-links navbar-nav ms-auto d-flex gap-4">
-        <a class="nav-link" href="./index.html">Home</a>
-        <a class="nav-link" href="./activities.html">Our fields of activities</a>
-        <a class="nav-link" href="./mission.html">Our Mission</a>
-        <a class="nav-link" href="./get_involved.html">Get Involved</a>
-      </nav>
+        <nav class="nav-links d-flex gap-4">
+            <a href="./index.html">Home</a>
+            <a href="./activities.html">Our fields of activities</a>
+            <a href="./mission.html">Our Mission</a>
+            <a href="./get_involved.html">Get Involved</a>
+        </nav>
     </div>
-  </div>
 </header>
 
-
-
+<!-- Main section -->
 <section class="main">
     <div class="main-content container">
         <div class="text-content">
@@ -55,7 +51,7 @@
 <!-- Banner full-width -->
 <section class="banner-image">
     <img id="banner-trigger" src="./img/home00.png" alt="">
-    <div id="scroll-reveal" class="hidden-text banner-text">
+   <div id="scroll-reveal" class="hidden-text banner-text">
         <h2>Forests Are Disappearing</h2>
         <p>
             Every year, more than 10 million hectares of forest are lost due to illegal logging,
@@ -75,7 +71,7 @@
     </div>
 </section>
 
-<!-- ONBOARDING SECTIONS -->
+<!-- Onboarding Sections -->
 <section class="onboarding-container container">
     <div class="onboarding-text">
         <h2>Understanding Deforestation</h2>
@@ -84,9 +80,7 @@
             <div class="step-number"><img src="./img/erLog.png" alt="" width="50"></div>
             <div class="step-content">
                 <h3>Agricultural Expansion</h3>
-                <p>
-                    70% of global deforestation is caused by converting forests into farmland, mostly for livestock and soy cultivation.
-                </p>
+                <p>70% of global deforestation is caused by converting forests into farmland, mostly for livestock and soy cultivation.</p>
             </div>
         </div>
     </div>
@@ -132,6 +126,7 @@
     </div>
 </section>
 
+<!-- Global Impact Section -->
 <section class="impact-section container">
     <h2>Global Impact of Deforestation</h2>
     <div class="impact-cards">
@@ -194,6 +189,7 @@
     </h1>
 </section>
 
+<!-- Footer -->
 <footer class="footer">
     <div class="container">
         <p>© 2025 Emerald Roots. All rights reserved.</p>
@@ -204,16 +200,7 @@
         </nav>
     </div>
 </footer>
-<!-- Bootstrap JS -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-
 
 <script src="./js/home.js"></script>
 </body>
 </html>
-
-
-
-
-
-
