@@ -24,6 +24,27 @@
     text-decoration: none;
     margin: 0 5px;
 }
+/* ====== CARRUSEL STANDARD SIZE (AISLADO) ====== */
+
+#regCarousel .carousel-item {
+    height: 420px !important; /* altura estándar */
+}
+
+/* SOLO aplica a imágenes dentro del carrusel */
+#regCarousel .carousel-item img {
+    height: 100% !important;
+    width: 100% !important;
+    object-fit: cover !important;
+    border-radius: 12px;
+}
+
+/* ====== RESPONSIVE PARA MOVIL - SOLO CARRUSEL ====== */
+@media (max-width: 768px) {
+    #regCarousel .carousel-item {
+        height: 250px !important;
+    }
+}
+
 
 
 
