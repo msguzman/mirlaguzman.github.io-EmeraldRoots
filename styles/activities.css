@@ -25,6 +25,32 @@
     margin: 0 5px;
 }
 
+
+
+/* ====== CARRUSEL STANDARD SIZE ====== */
+
+/* Tamaño general del carrusel */
+#regCarousel .carousel-item {
+    height: 420px; /* altura estándar — puedes ajustar */
+}
+
+/* Imágenes dentro del carrusel */
+#regCarousel img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;   /* Recorta la imagen sin deformarla */
+    border-radius: 12px;
+}
+
+/* ====== RESPONSIVE PARA MOVIL ====== */
+@media (max-width: 768px) {
+    #regCarousel .carousel-item {
+        height: 250px;  /* altura más pequeña en móvil */
+    }
+}
+
+
 .footer-nav a:hover {
     color: #c8e6c9;
 }
+
