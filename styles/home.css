@@ -17,7 +17,7 @@ body {
 
 /* ===== HEADER  ===== */
 #home-page .custom-navbar {
-    background: #b1e7c3;
+    background: #b1e7c3!important;
 }
 
 #home-page .custom-navbar a {
@@ -272,3 +272,4 @@ body {
         width: 90%;
     }
 }
+
