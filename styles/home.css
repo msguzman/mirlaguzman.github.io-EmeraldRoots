@@ -34,16 +34,19 @@ body {
     align-items: center;
     margin: 0;
     font-weight: 600;
-    font-size: 1rem; 
+    font-size: 1rem;      /* tamaño igual que Activities */
+    line-height: 1;       /* altura de línea igual que Activities */
 }
 
 #home-navbar .logo img {
-    margin-right: 0.5rem; 
+    width: 50px;           /* tamaño igual que Activities */
+    height: auto;          /* mantiene proporción */
+    margin-right: 0.5rem;  /* separación igual */
 }
 
 #home-navbar .nav-links {
     display: flex;
-    gap: 1rem; 
+    gap: 1rem;             /* equivalente a gap-4 */
     align-items: center;
 }
 
@@ -327,5 +330,3 @@ body {
         margin-top: 10px;
     }
 }
-
-
