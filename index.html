@@ -4,18 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Emerald Roots</title>
-    <link rel="stylesheet" href="./styles/home.css">
+
+    <!-- Link to activities CSS for navbar -->
     <link rel="stylesheet" href="./styles/activities.css">
+    <!-- Home CSS -->
+    <link rel="stylesheet" href="./styles/home.css">
 </head>
 <body>
-    
-<!-- Navbar -->
-<header class="custom-navbar">
-    <div class="navbar-container">
-        <h2 class="logo">
-            <img src="./img/erLog.png" alt="" width="50">Emerald Roots
+
+<!-- Navbar (identical to activities.html) -->
+<header class="custom-navbar py-3">
+    <div class="container d-flex justify-content-between align-items-center">
+        <h2 class="logo m-0 d-flex align-items-center">
+            <img src="./img/erLog.png" alt="" width="50" class="me-2">Emerald Roots
         </h2>
-        <nav class="nav-links">
+
+        <nav class="nav-links d-flex gap-4">
             <a href="./index.html">Home</a>
             <a href="./activities.html">Our fields of activities</a>
             <a href="./mission.html">Our Mission</a>
@@ -42,7 +46,7 @@
 <!-- Banner full-width -->
 <section class="banner-image">
     <img id="banner-trigger" src="./img/home00.png" alt="">
-   <div id="scroll-reveal" class="hidden-text banner-text">
+    <div id="scroll-reveal" class="hidden-text banner-text">
         <h2>Forests Are Disappearing</h2>
         <p>
             Every year, more than 10 million hectares of forest are lost due to illegal logging,
@@ -119,7 +123,6 @@
     </div>
 </section>
 
-<!-- NEW SECTIONS ABOUT DEFORESTATION -->
 <section class="impact-section container">
     <h2>Global Impact of Deforestation</h2>
     <div class="impact-cards">
@@ -149,8 +152,6 @@
     </div>
 </section>
 
-
-
 <section class="before-after-section container">
     <h2>Before and After Reforestation</h2>
     <div class="before-after-images">
@@ -162,17 +163,15 @@
             <img src="./img/after.png" alt="After reforestation">
             <p>After: Restored and biodiverse area.</p>
         </div>
-        
     </div>
-   
 </section>
-    <section class="counter-section container">
-    
+
+<section class="counter-section container">
     <h2>Trees Planted</h2>
     <p id="tree-counter">0</p>
 </section>
-    
-    <section class="help-section container">
+
+<section class="help-section container">
     <h2>How You Can Help</h2>
     <ul>
         <li>🌳 Donate to reforestation projects</li>
@@ -181,13 +180,11 @@
         <li>📄 Reduce paper and meat consumption</li>
         <li>📢 Spread awareness about the importance of forests</li>
     </ul>
-      <h1>
-  <a href="./get_involved.html" class="btn btn-dark">Donate Now</a>
-          
-</h1>
-
+    <h1>
+        <a href="./get_involved.html" class="btn btn-dark">Donate Now</a>
+    </h1>
 </section>
-    
+
 <footer class="footer">
     <div class="container">
         <p>© 2025 Emerald Roots. All rights reserved.</p>
@@ -202,10 +199,3 @@
 <script src="./js/home.js"></script>
 </body>
 </html>
-
-
-
-
-
-
-
