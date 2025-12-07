@@ -34,6 +34,17 @@ body {
     margin-right: 5px;
 }
 
+
+.logo {
+    margin: 0; /* igual que activities */
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    margin-right: 0.5rem; /* me-2 equivalente */
+}
+
 /* ===== NAV LINKS ===== */
 .nav-links {
     display: flex;
@@ -312,3 +323,4 @@ body {
         width: 90%;
     }
 }
+
