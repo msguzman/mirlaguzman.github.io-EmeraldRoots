@@ -33,20 +33,21 @@ body {
     display: flex;
     align-items: center;
     margin: 0;
-    font-weight: 600;
-    font-size: 1rem;      /* tamaño igual que Activities */
-    line-height: 1;       /* altura de línea igual que Activities */
 }
 
 #home-navbar .logo img {
-    width: 50px;           /* tamaño igual que Activities */
-    height: auto;          /* mantiene proporción */
-    margin-right: 0.5rem;  /* separación igual */
+    margin-right: 0.5rem; 
+}
+
+#home-navbar .logo span {
+    font-size: 1rem !important;   
+    line-height: 1;
+    font-weight: 600;
 }
 
 #home-navbar .nav-links {
     display: flex;
-    gap: 1rem;             /* equivalente a gap-4 */
+    gap: 1rem; 
     align-items: center;
 }
 
