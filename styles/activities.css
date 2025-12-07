@@ -24,6 +24,7 @@
     text-decoration: none;
     margin: 0 5px;
 }
+
 /* ====== CARRUSEL STANDARD SIZE (AISLADO) ====== */
 
 #regCarousel .carousel-item {
@@ -43,7 +44,7 @@
     #regCarousel .carousel-item {
         height: 250px !important;
     }
-}
+
 
 
 
